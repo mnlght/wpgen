@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Shower Presentation Engine</h1>
+        <p>Yours Truly, Famous Inc.</p>
+    </header>
+
+    <section class="slide">
+        <h1>Bitrix code gen</h1>
+        <p>Пакет для генерации серверного кода по OA контракту</p>
+    </section>
+
+    <section class="slide">
+        <h1>Чем вызвана необходимость написать пакет</h1>
+        <ul>
+            <li class="next">Желанием не тратить время на написание шаблонного кода</li>
+            <li class="next">Желанием гарантировать исполнение контракта со стороны бэка</li>
+            <li class="next">Желанием быстро генерировать моковые контроллеры по спецификации от аналитиков</li>
+            <li class="next">Желанием делегировать бойлерплейт автоматике и сосредоточиться на БЛ</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h1>Входные данные</h1>
+        <ul>
+            <li class="next">Спецификация OA в json/yaml формате</li>
+            <li class="next">Развернутый битрикс</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h1>Порядок работы</h1>
+        <ul>
+            <li class="next">Положить json файл в корень</li>
+            <li class="next">Установить пакет</li>
+            <li class="next">php vendor/src/bin/bitrixapigen generate</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <img class="cover" src="images/sc2.png">
+    </section>
+
+    <section class="slide">
+        <h1>Что будет на выходе</h1>
+        <ul>
+            <li class="next">Сгенерированный модуль webpractik.bitrixgen</li>
+            <li class="next">Контроллеры, сгенерированные по тегам из OA</li>
+            <li class="next">DTO</li>
+            <li class="next">Интерфейсы для UseCase</li>
+            <li class="next">UseCase</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <img class="cover" src="images/sc1.png">
+    </section>
+    <section class="slide">
+        <img class="cover" src="images/sc3.png">
+    </section>
+    <section class="slide">
+        <h1>Важно</h1>
+        <ul>
+            <li class="next">По умолчанию в сервис-локаторе будет зарегистрирован мок-класс</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <img class="cover" src="images/sc4.png">
+    </section>
+    <section class="slide">
+        <img class="cover" src="images/sc5.png">
+    </section>
+    <section class="slide">
+        <h1>Важно</h1>
+        <ul>
+            <li class="next">Чтобы переопределить класс на свой нужно зарегистрировать его ДО подключения этого модуля</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <h1>Конец</h1>
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.js"></script>
+    <!-- Copyright © 2025 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
